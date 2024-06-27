@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Duplicate Tab Extension",
+    "version": "2.0",
+    "description": "Duplicates the current tab on Alt+Shift+D keydown.",
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+        "service_worker": "content.js"
+    },
+    "action": {
+        "default_title": "Click to view a popup"
+    },
+    "commands": {
+      "duplicate_tab": {
+        "suggested_key": {
+          "default": "Alt+Shift+D"
+        },
+        "description": "Duplicates the current tab on Alt+Shift+D keydown."
+      }
+    }
+  }
